@@ -76,8 +76,3 @@ This is a React application that demonstrates the use of `react-router-dom` for 
 6. Open a Pull Request.
 
 ## License
-
-This project is licensed under the MIT License.
-```
-
-Feel free to customize this `README.md` as needed for your project.
