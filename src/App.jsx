@@ -38,7 +38,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
 
         {/* Parent Route and three child Route */}
         <Route path="app" element={<AppLayout />}>
