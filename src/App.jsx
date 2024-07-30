@@ -21,18 +21,14 @@ export default function App() {
           <Route path="pricing" element={<Pricing />} />
           <Route path="login" element={<Login />} />
 
-          {/* Parent Route and three child Route */}
           <Route path="app" element={<AppLayout />}>
-            {/* Defalut child route */}
+            {/* Parent Route and three child Route */}
             <Route index element={<Navigate replace to="cities" />} />
-
+            {/* Defalut child route */}
             <Route path="cities" element={<CityList />} />
-
-            {/* dynamic Route with URL parameters  */}
             <Route path="cities/:id" element={<City />} />
-
+            {/* dynamic Route with URL parameters  */}
             <Route path="countries" element={<CountryList />} />
-
             <Route path="form" element={<Form />} />
           </Route>
 
