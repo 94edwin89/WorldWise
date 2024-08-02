@@ -39,3 +39,4 @@ This React application demonstrates the implementation of a client-side routing 
 To run this application, ensure you have the necessary components (HomePage, Product, Pricing, etc.) and a backend server running at `http://localhost:9000` serving the city data.
 
 This setup provides a robust structure for a multi-page React application with nested and dynamic routes, ensuring a smooth navigation experience for the user.
+------------------------------------------------------------------
