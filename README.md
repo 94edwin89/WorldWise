@@ -1,5 +1,3 @@
-This React application demonstrates the implementation of a client-side routing system using `react-router-dom`. The app fetches city data from a backend server and displays it across different pages. Below is a brief overview of the key components and functionality:
-
 ### Overview
 
 1. **State Management**:
