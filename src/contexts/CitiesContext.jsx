@@ -51,7 +51,7 @@ function CitiesProvider({ children }) {
 
       setCities((cities) => [...cities, data]);
     } catch {
-      alert("There was an error loading data. . .");
+      alert("There was an error creating city. . .");
     } finally {
       setIsLoading(false);
     }
