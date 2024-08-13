@@ -38,3 +38,104 @@ To run this application, ensure you have the necessary components (HomePage, Pro
 
 This setup provides a robust structure for a multi-page React application with nested and dynamic routes, ensuring a smooth navigation experience for the user.
 ------------------------------------------------------------------
+
+
+# Package.json
+
+Here's a description for your `README.md` based on the provided `package.json` configuration:
+
+---
+
+# Worldwise
+
+Worldwise is a React application that provides an interactive map experience using Leaflet and React-Leaflet. This project leverages modern web development tools such as Vite for fast builds and development, ESLint for code quality, and React Router for navigation. The project also uses JSON Server to simulate a backend API, making it easy to work with mock data.
+
+## Features
+
+- **Interactive Maps**: Integrate maps with Leaflet and React-Leaflet for a dynamic user experience.
+- **Date Selection**: Use React-Datepicker for easy date selection.
+- **Routing**: Navigate through the application seamlessly with React Router.
+- **Mock API**: Utilize JSON Server to simulate backend responses for development and testing.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm (>= 7.x)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd worldwise
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+- Start the development server:
+  ```bash
+  npm run dev
+  ```
+
+- Run the JSON Server:
+  ```bash
+  npm run server
+  ```
+
+### Building for Production
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+### Linting
+
+Ensure your code meets the project's standards:
+
+```bash
+npm run lint
+```
+
+## Scripts
+
+- **`npm run dev`**: Starts the Vite development server.
+- **`npm run build`**: Builds the application for production.
+- **`npm run preview`**: Previews the production build.
+- **`npm run server`**: Starts the JSON Server with a delay for simulating network latency.
+- **`npm run lint`**: Runs ESLint to check for code quality issues.
+
+## Dependencies
+
+- **React**: ^18.3.1
+- **Leaflet**: ^1.9.4
+- **React-Leaflet**: ^4.2.1
+- **React-Router-Dom**: ^6.25.1
+- **React-Datepicker**: ^7.3.0
+- **JSON Server**: 0.17.0
+
+## Dev Dependencies
+
+- **Vite**: ^4.0.0
+- **ESLint**: ^8.57.0
+- **ESLint Plugins for React**: Various plugins for linting React code.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+This README provides an overview of the project's purpose, setup instructions, and key features, making it easy for others to understand and contribute. If there's anything specific you'd like to add or adjust, feel free to let me know!
