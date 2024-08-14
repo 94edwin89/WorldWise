@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Login.module.css";
 import PageNav from "../components/PageNav";
 
+
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
@@ -32,7 +33,7 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <button className="cta">Login</button>
         </div>
       </form>
     </main>
