@@ -138,4 +138,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-This README provides an overview of the project's purpose, setup instructions, and key features, making it easy for others to understand and contribute. If there's anything specific you'd like to add or adjust, feel free to let me know!
