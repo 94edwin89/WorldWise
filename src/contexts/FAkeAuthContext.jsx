@@ -33,8 +33,8 @@ const FAKE_USER = {
   avatar: "https://i.pravatar.cc/100?u=zz",
 };
 
-function AuthContext({ children }) {
-  const [{ user, isAuthenticated }, dispatch] = useReducer;
+function AuthProvider({ children }) {
+  const [{ user, isAuthenticated }, dispatch] = useReducer(reducer, initialState);
 
   function login(email, password) {
     if (email === FAKE_USER.email && password === FAKE_USER.password)

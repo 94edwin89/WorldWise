@@ -128,7 +128,6 @@ npm run lint
 - **ESLint**: ^8.57.0
 - **ESLint Plugins for React**: Various plugins for linting React code.
 
-## Contributing
 
 
 
