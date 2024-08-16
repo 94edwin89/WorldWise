@@ -5,7 +5,7 @@ import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
 
 export default function CountryList() {
-  const { ciites, isLoading } = useCities();
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
 
   if (!cities.length)

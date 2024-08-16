@@ -11,33 +11,41 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/FAkeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 export default function App() {
   return (
     <AuthProvider>
-    <CitiesProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="product" element={<Product />} />
-          <Route path="pricing" element={<Pricing />} />
-          <Route path="login" element={<Login />} />
+      <CitiesProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="product" element={<Product />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="login" element={<Login />} />
 
-          <Route path="app" element={<AppLayout />}>
-            {/* Parent Route and three child Route */}
-            <Route index element={<Navigate replace to="cities" />} />
-            {/* Defalut child route */}
-            <Route path="cities" element={<CityList />} />
-            <Route path="cities/:id" element={<City />} />
-            {/* dynamic Route with URL parameters  */}
-            <Route path="countries" element={<CountryList />} />
-            <Route path="form" element={<Form />} />
-          </Route>
+            <Route
+              path="app"
+              element={
+                <ProtectedRoute>
+                  <AppLayout />
+                </ProtectedRoute>
+              }
+            >
+              {/* Parent Route and three child Route */}
+              <Route index element={<Navigate replace to="cities" />} />
+              {/* Defalut child route */}
+              <Route path="cities" element={<CityList />} />
+              <Route path="cities/:id" element={<City />} />
+              {/* dynamic Route with URL parameters  */}
+              <Route path="countries" element={<CountryList />} />
+              <Route path="form" element={<Form />} />
+            </Route>
 
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
       </CitiesProvider>
-      </AuthProvider>
+    </AuthProvider>
   );
 }
