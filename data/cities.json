@@ -47,6 +47,42 @@
         "lng": "-2.13128394200588"
       },
       "id": 98443198
+    },
+    {
+      "cityName": "Montierchaume",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-08-16T06:47:36.635Z",
+      "notes": "test\n",
+      "position": {
+        "lat": "46.84516443029276",
+        "lng": "1.7358398437500002"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Ooty",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-08-16T06:52:52.120Z",
+      "notes": "test",
+      "position": {
+        "lat": "11.40868733961014",
+        "lng": "76.52664184570314"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Vinhais",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2024-08-16T09:02:48.295Z",
+      "notes": "test",
+      "position": {
+        "lat": "41.78769700539063",
+        "lng": "-7.009277343750001"
+      },
+      "id": 98443201
     }
   ]
 }
